@@ -1,0 +1,5 @@
+python3 test.py --checkpoint ../PICK/saved/models/PICK_Default/test_final/model_best.pth \
+               --boxes_transcripts ../PICK/data/test_data_example/boxes_and_transcripts \
+               --images_path ../PICK/data/test_data_example/images \
+               --output_folder ../PICK/data/test_data_example/outputs \
+               --batch_size 2

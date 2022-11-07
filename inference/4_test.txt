@@ -1,0 +1,45 @@
+tách nền -> xoay -> pick
+
+
+python3 test.py --checkpoint ../PICK/saved/models/PICK_Default/test_final/model_best.pth \
+               --boxes_transcripts ../PICK/data/test_data_example/boxes_and_transcripts \
+               --images_path ../PICK/data/test_data_example/images \
+               --output_folder ../PICK/data/test_data_example/outputs \
+               --batch_size 2
+
+python3 test.py --checkpoint ../PICK/saved/models/PICK_Default/test_final/model_best.pth \
+               --boxes_transcripts ../inference/data/text_classifier/tsv \
+               --images_path ../inference/data/preprocess/rotated_imgs \
+               --output_folder ../inference/data/output \
+               --batch_size 2
+
+python3 test.py --checkpoint ../PICK/saved/models/PICK_Default/final/model_best.pth \
+               --boxes_transcripts ../inference/data/text_classifier/tsv \
+               --images_path ../inference/data/preprocess/rotated_imgs \
+               --output_folder ../inference/data/output \
+               --batch_size 2
+
+python3 test.py --checkpoint ../PICK/saved/models/PICK_Default/final/model_best.pth \
+               --boxes_transcripts ../inference/data/text_classifier/tsv \
+               --images_path ../inference/data/preprocess/rotated_imgs \
+               --output_folder ../inference/data/output \
+               --batch_size 1
+
+python3 test.py --checkpoint ../PICK/saved/models/PICK_Default/final/model_best.pth \
+               --boxes_transcripts ../inference/test_data/boxes_and_transcripts
+               --images_path ../inference/test_data/images
+               --output_folder ../inference/test_data/output \
+               --batch_size 1
+
+
+python3 test.py --checkpoint ../PICK/saved/models/PICK_Default/final_01_71/model_best.pth \
+               --boxes_transcripts ../inference/data/text_classifier/tsv \
+               --images_path ../inference/data/preprocess/rotated_imgs \
+               --output_folder ../inference/data/output \
+               --batch_size 1
+
+python3 test.py --checkpoint ../PICK/saved/models/PICK_Default/final_03_38/model_best.pth \
+               --boxes_transcripts ../inference/data/text_classifier/tsv \
+               --images_path ../inference/data/preprocess/rotated_imgs \
+               --output_folder ../inference/data/output \
+               --batch_size 1
